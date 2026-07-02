@@ -13,7 +13,7 @@ variable "resource_group_location" {
 variable "environment" {
   description = "The environment for the resources (e.g., dev, test, prod)"
   type        = string
-  #default     = "dev"
+  default     = "dev"
 }
 
 variable "business_unit" {
