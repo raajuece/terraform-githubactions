@@ -1,4 +1,4 @@
-
+name: terraform Plan Approval Apply
 on:
     workflow_dispatch: #it will run manually
 permissions: 
