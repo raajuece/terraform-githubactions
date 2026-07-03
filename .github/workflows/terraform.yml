@@ -33,6 +33,15 @@ jobs:
    
       - name: Terraform init
         run: terraform init
+
+      - name: Setup TFLint
+        uses: terraform-linters/setup-tflint@v4
+      - name: TFLint
+        run: tflint --init 
+
+      - name: TFLint
+        run: tflint -f compact
+        #continue-on-error: true #this will continue the job even if the tflint fails
         
       - name: Terraform validate
         run: terraform validate
