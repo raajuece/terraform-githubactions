@@ -58,9 +58,6 @@ jobs:
           name: terraform-plan
           path: terraform/tfplan
 
-===============================================
-
-
 #################################################
 ##approval and apply
 #################################################
@@ -94,5 +91,3 @@ jobs:
           path: terraform
       - name: Terraform Apply
         run: terraform apply -auto-approve tfplan
-
-==================================================================        
